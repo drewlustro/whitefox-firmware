@@ -1,5 +1,5 @@
-cgi-bin/build_layout.bash 1848680942abd8828808bb6b419dcd5f157da2ce81c1aa WhiteFox "WhiteFox-AriaBlank-0.kll" "WhiteFox-AriaBlank-1.kll" "WhiteFox-AriaBlank-2.kll"  2>&1
-+ cmake /srv/KiiConf/controller -DScanModule=WhiteFox -DCHIP=mk20dx256vlh7 -DMacroModule=PartialMap -DOutputModule=pjrcUSB -DDebugModule=full -DBaseMap=defaultMap '-DDefaultMap=WhiteFox-AriaBlank-0 stdFuncMap' '-DPartialMaps=WhiteFox-AriaBlank-1 stdFuncMap;WhiteFox-AriaBlank-2 stdFuncMap' -DCONFIGURATOR=1
+cgi-bin/build_layout.bash 1e52a255f334d385fa2ff7e72e6384ed1598ff054f2fc8 WhiteFox "WhiteFox-AriaBlank-0.kll" "WhiteFox-AriaBlank-1.kll" "WhiteFox-AriaBlank-2.kll" "WhiteFox-AriaBlank-3.kll"  2>&1
++ cmake /srv/KiiConf/controller -DScanModule=WhiteFox -DCHIP=mk20dx256vlh7 -DMacroModule=PartialMap -DOutputModule=pjrcUSB -DDebugModule=full -DBaseMap=defaultMap '-DDefaultMap=WhiteFox-AriaBlank-0 stdFuncMap' '-DPartialMaps=WhiteFox-AriaBlank-1 stdFuncMap;WhiteFox-AriaBlank-2 stdFuncMap;WhiteFox-AriaBlank-3 stdFuncMap' -DCONFIGURATOR=1
 -- Compiler Family:
 arm
 -- Compiler Selected:
@@ -25,17 +25,20 @@ Debug/cli/cli.c;Debug/led/led.c;Debug/print/print.c
 -- Found Git: /usr/bin/git (found version "1.9.1") 
 -- Found Ctags: /usr/bin/ctags (found version "5.9~svn20110310") 
 ctags: cannot open tag file : Permission denied
+-- Found PythonInterp: python3 (found suitable version "3.4.3", minimum required is "3") 
 -- Detected Layout Files:
 /srv/KiiConf/controller/Scan/ISSILed/capabilities.kll
 /srv/KiiConf/controller/Scan/MatrixARM/capabilities.kll
 /srv/KiiConf/controller/Macro/PartialMap/capabilities.kll
 /srv/KiiConf/controller/Output/pjrcUSB/capabilities.kll
 /srv/KiiConf/controller/Scan/WhiteFox/scancode_map.kll
-/srv/KiiConf/dist/tmp/1848680942abd8828808bb6b419dcd5f157da2ce81c1aa/WhiteFox-AriaBlank-0.kll
+/srv/KiiConf/dist/tmp/1e52a255f334d385fa2ff7e72e6384ed1598ff054f2fc8/WhiteFox-AriaBlank-0.kll
 /srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
-/srv/KiiConf/dist/tmp/1848680942abd8828808bb6b419dcd5f157da2ce81c1aa/WhiteFox-AriaBlank-1.kll
+/srv/KiiConf/dist/tmp/1e52a255f334d385fa2ff7e72e6384ed1598ff054f2fc8/WhiteFox-AriaBlank-1.kll
 /srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
-/srv/KiiConf/dist/tmp/1848680942abd8828808bb6b419dcd5f157da2ce81c1aa/WhiteFox-AriaBlank-2.kll
+/srv/KiiConf/dist/tmp/1e52a255f334d385fa2ff7e72e6384ed1598ff054f2fc8/WhiteFox-AriaBlank-2.kll
+/srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
+/srv/KiiConf/dist/tmp/1e52a255f334d385fa2ff7e72e6384ed1598ff054f2fc8/WhiteFox-AriaBlank-3.kll
 /srv/KiiConf/controller/kll/layouts/stdFuncMap.kll
 -- Found DFU_SUFFIX: /usr/local/bin/dfu-suffix (found version "0.8") 
 -- Configuring done
@@ -46,31 +49,31 @@ CMake Warning:
     CONFIGURATOR
 
 
--- Build files have been written to: /srv/KiiConf/dist/tmp/1848680942abd8828808bb6b419dcd5f157da2ce81c1aa
+-- Build files have been written to: /srv/KiiConf/dist/tmp/1e52a255f334d385fa2ff7e72e6384ed1598ff054f2fc8
 + make -j
 [  4%] Generating KLL Layout
 Scanning dependencies of target kiibohd.elf
-[  8%] [ 13%] [ 17%] [ 21%] [ 26%] [ 30%] [ 34%] Building C object CMakeFiles/kiibohd.elf.dir/Scan/MatrixARM/matrix_scan.c.o
-[ 39%] Building C object CMakeFiles/kiibohd.elf.dir/Scan/ISSILed/led_scan.c.o
-[ 43%] Building C object CMakeFiles/kiibohd.elf.dir/main.c.o
-Building C object CMakeFiles/kiibohd.elf.dir/Macro/PartialMap/macro.c.o
-Building C object CMakeFiles/kiibohd.elf.dir/Scan/WhiteFox/scan_loop.c.o
+[  8%] [ 13%] [ 17%] [ 21%] Building C object CMakeFiles/kiibohd.elf.dir/main.c.o
+[ 26%] Building C object CMakeFiles/kiibohd.elf.dir/Lib/mk20dx.c.o
+[ 30%] Building C object CMakeFiles/kiibohd.elf.dir/Lib/delay.c.o
+Building C object CMakeFiles/kiibohd.elf.dir/Scan/ISSILed/led_scan.c.o
+[ 34%] Building C object CMakeFiles/kiibohd.elf.dir/Scan/MatrixARM/matrix_scan.c.o
+[ 39%] [ 43%] Building C object CMakeFiles/kiibohd.elf.dir/Macro/PartialMap/macro.c.o
+[ 47%] Building C object CMakeFiles/kiibohd.elf.dir/Scan/WhiteFox/scan_loop.c.o
 Building C object CMakeFiles/kiibohd.elf.dir/Macro/PartialMap/result.c.o
-Building C object CMakeFiles/kiibohd.elf.dir/Lib/delay.c.o
-[ 47%] Building C object CMakeFiles/kiibohd.elf.dir/Macro/PartialMap/trigger.c.o
-[ 52%] [ 56%] Building C object CMakeFiles/kiibohd.elf.dir/Lib/mk20dx.c.o
+[ 52%] Building C object CMakeFiles/kiibohd.elf.dir/Macro/PartialMap/trigger.c.o
 Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/output_com.c.o
 Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_desc.c.o
-Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_dev.c.o
-[ 60%] [ 65%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_joystick.c.o
-Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_keyboard.c.o
+[ 56%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_dev.c.o
+[ 60%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_joystick.c.o
+[ 65%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_keyboard.c.o
 [ 69%] [ 73%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_mem.c.o
-[ 78%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_mouse.c.o
-[ 82%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_rawio.c.o
-[ 86%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_serial.c.o
-Building C object CMakeFiles/kiibohd.elf.dir/Debug/cli/cli.c.o
-[ 91%] Building C object CMakeFiles/kiibohd.elf.dir/Debug/led/led.c.o
-[ 95%] Building C object CMakeFiles/kiibohd.elf.dir/Debug/print/print.c.o
+Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_mouse.c.o
+[ 78%] [ 82%] [ 86%] [ 91%] Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_serial.c.o
+Building C object CMakeFiles/kiibohd.elf.dir/Output/pjrcUSB/arm/usb_rawio.c.o
+[ 95%] Building C object CMakeFiles/kiibohd.elf.dir/Debug/cli/cli.c.o
+Building C object CMakeFiles/kiibohd.elf.dir/Debug/led/led.c.o
+Building C object CMakeFiles/kiibohd.elf.dir/Debug/print/print.c.o
 Linking C executable kiibohd.elf
 Create and sign dfu bin file:  kiibohd.dfu.bin
 Creating Extended Listing:     kiibohd.lss
@@ -78,8 +81,8 @@ Creating Symbol Table:         kiibohd.sym
 [ 95%] Built target kiibohd.elf
 Scanning dependencies of target SizeAfter
 [100%] Chip usage for mk20dx256vlh7
-	[1m SRAM[m: 	[1;32m13%[m 	8556/65536	bytes
-	[1mFlash[m: 	[1;32m13%[m 	33204/253952	bytes
+	[1m SRAM[m: 	[1;32m14%[m 	9212/65536	bytes
+	[1mFlash[m: 	[1;32m13%[m 	33440/253952	bytes
 [100%] Built target SizeAfter
 + RETVAL=0
 + set +x

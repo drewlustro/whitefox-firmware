@@ -7,7 +7,8 @@ KLL = "0.3c";
 Date = "2016-05-30";
 Generator = "KIICONF 0.2";
 
-U"ESC" : flashMode();
+U"ESC" : None;
+U"5" : None;
 U"8" : CONS"BRIGHTNESSDECREMENT";
 U"9" : CONS"BRIGHTNESSINCREMENT";
 U"0" : CONS"MUTE";

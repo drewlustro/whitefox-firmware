@@ -18,14 +18,18 @@
             "h": 4,
             "layers": {
                 "0": {
-                    "key": "BACKTICK",
-                    "label": "`"
-                },
-                "1": {
                     "key": "ESCAPE",
                     "label": "ESC"
                 },
+                "1": {
+                    "key": "BACKTICK",
+                    "label": "`"
+                },
                 "2": {
+                    "key": "#:None",
+                    "label": "NONE"
+                },
+                "3": {
                     "key": "#:flashMode()",
                     "label": "FLASH"
                 }
@@ -113,6 +117,10 @@
                 "1": {
                     "key": "F5",
                     "label": "F5"
+                },
+                "2": {
+                    "key": "#:None",
+                    "label": "NONE"
                 }
             }
         },
@@ -498,6 +506,10 @@
                 "0": {
                     "key": "FUN1",
                     "label": "\u01921"
+                },
+                "1": {
+                    "key": "CAPSLOCK",
+                    "label": "CAPSLK"
                 },
                 "2": {
                     "key": "CAPSLOCK",
@@ -898,6 +910,10 @@
                 "0": {
                     "key": "CTRL",
                     "label": "LCTRL"
+                },
+                "1": {
+                    "key": "FUN3",
+                    "label": "\u01923"
                 }
             }
         },
